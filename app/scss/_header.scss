@@ -28,7 +28,7 @@
       position: relative;
       font-size: $font-sm;
       color: $grayishBlue;
-      transition: color 200ms ease-in-out;
+      transition: color 300ms ease-in-out;
 
       &:not(:last-child) {
         margin-right: 32px;
@@ -60,5 +60,10 @@
   &__cta {
     font-size: $font-sm;
     color: $white;
+    transition: opacity 300ms ease-in-out;
+
+    &:hover {
+      opacity: 0.75;
+    }
   }
 }
