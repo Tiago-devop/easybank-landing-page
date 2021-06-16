@@ -350,6 +350,13 @@ button,
   min-height: 17.5rem;
 }
 
+@media (min-width: 40em) {
+  .hero__image {
+    min-height: 25rem;
+    background-position: center 60%;
+  }
+}
+
 @media (min-width: 64em) {
   .hero__image {
     -webkit-box-flex: 3;
@@ -363,19 +370,14 @@ button,
   }
 }
 
-.hero__image::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-image: url("/images/bg-intro-desktop.svg");
-  background-size: 93%;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-}
-
 @media (min-width: 64em) {
   .hero__image::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-image: url("/images/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
     width: 150%;
     background-size: 122%;
     background-position: 0% 83%;
@@ -391,6 +393,12 @@ button,
   background-size: 93%;
   background-repeat: no-repeat;
   background-position: center bottom;
+}
+
+@media (min-width: 40em) {
+  .hero__image::after {
+    background-size: 52%;
+  }
 }
 
 @media (min-width: 64em) {
