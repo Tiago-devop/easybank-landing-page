@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+  z-index: 1;
   // Hamburger Open Styles
 
   &.open {
@@ -24,15 +26,7 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background: linear-gradient($darkBlue, transparent, transparent);
-
-    &.fade-in {
-      display: block;
-    }
-
-    &.fade-out {
-      display: none;
-    }
+    background-image: linear-gradient($darkBlue, transparent);
   }
 
   nav {
@@ -105,7 +99,7 @@
         bottom: -30px;
         background: linear-gradient(to right, $limeGreen, $brightCyan);
         opacity: 0;
-        transition: opacity 200ms ease-in-out;
+        transition: opacity 300ms ease-in-out;
       }
 
       &:hover {
